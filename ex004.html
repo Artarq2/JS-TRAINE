@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nome = window.prompt("Qual é o seu nome?");
+      document.write(
+        "Seu nome que é " + nome + " tem " + nome.length + " letras.<br/>",
+      ); //Concatenação
+      document.write(`Seu nome que é ${nome} tem ${nome.length} letras.`); //Template String
+      document.write("Seu nome em maísculo é " + nome.toUpperCase() + ".<br/>"); //Concatenação com método toUpperCase() para deixar o nome em maísculo.
+      document.write(`Seu nome em minusculo é ${nome.toLowerCase()}.`); //Template String com método toLowerCase() para deixar o nome em minusculo.
+    </script>
+  </body>
+</html>
