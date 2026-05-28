@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema DOM</title>
+    <style>
+      div#area {
+        background: #677ab9;
+        color: white;
+        font: normal 18pt Arial;
+        width: 300px; /* Define a largura do elemento */
+        height: 100px; /* Define a altura do elemento */
+        line-height: 100px; /* Alinha o texto verticalmente ao centro */
+        text-align: center; /* Alinha o texto horizontalmente ao centro */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="area" onclick="clicar()">Interajir com o DOM!</div>
+    <script>
+      function clicar() {
+        //quando eu chamar a função clicar, ela vai executar o código dentro dela.
+        let area = window.document.querySelector("div#area"); // Seleciona o elemento <div> com id "area".
+        area.innerText = "Clicou!"; // Altera o texto do elemento selecionado para "Clicou!".
+      }
+    </script>
+  </body>
+</html>

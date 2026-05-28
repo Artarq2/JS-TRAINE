@@ -20,8 +20,12 @@
     <h1>Hello World!</h1>
     <p>A maldição do mundo já foi quebrada</p>
     <script>
-      let nome = window.prompt("Qual é o seu favorito sabor de picolé?"); //Esse comando é para o usuário digitar algo, e o que ele digitar vai ser armazenado em uma variável.
-      window.alert("É um grande prazer lhe conhecer," + nome + "!"); //concatenação "+" é para juntar o texto com a variável.
+      let n1 = window.prompt("Digite um número:"); // String
+      let n2 = window.prompt("Digite outro número:"); // STRING
+      let resultado = Number(n1) + Number(n2); // Converste as Strings para Números usados na soma.
+      window.alert(
+        `O resultado da soma de ${n1} e ${n2} é igual a ${resultado}`,
+      ); // Mostra o resultado da soma para o usuário.
     </script>
   </body>
 </html>

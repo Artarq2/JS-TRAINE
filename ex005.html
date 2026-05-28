@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro Passos com Dom</title>
+    <style>
+      body {
+        background: #677ab9;
+        color: white;
+        font: normal 18pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Isso é um teste para o Dom</h1>
+    <p>Esse é um parágrafo de teste para o Dom</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique aqui</div>
+    <script>
+      let d1 = window.document.querySelector("div#msg"); // Seleciona o elemento <div> com id "msg". -- Se for ID(#) / Se for classe(.) / Se for tag (sem símbolo)
+      let p1 = window.document.getElementsByTagName("p")[0]; // Seleciona o primeiro elemento <p> da página.
+    </script>
+  </body>
+</html>

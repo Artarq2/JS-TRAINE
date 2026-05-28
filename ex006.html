@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema DOM</title>
+    <style>
+      div#area {
+        background: #677ab9;
+        color: white;
+        font: normal 18pt Arial;
+        width: 300px; /* Define a largura do elemento */
+        height: 100px; /* Define a altura do elemento */
+        line-height: 100px; /* Alinha o texto verticalmente ao centro */
+        text-align: center; /* Alinha o texto horizontalmente ao centro */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="area">Interajir com o DOM!</div>
+    <script>
+      let area = window.document.querySelector("div#area"); // Seleciona o elemento <div> com id "area".
+      area.addEventListener("click", clicar); // Adiciona um evento de clique ao elemento selecionado, que chama a função clicar quando o elemento é clicado.
+      area.addEventListener("mouseenter", entrar); // Adiciona um evento de mouseenter ao elemento selecionado, que chama a função entrar quando o mouse entra no elemento.
+      area.addEventListener("mouseleave", sair); // Adiciona um evento de mouseleave
+      function clicar() {
+        area.innerText = "Clicou!"; // Altera o texto do elemento selecionado para "Clicou!".
+        area.style.background = "red"; // Altera a cor de fundo do elemento selecionado para vermelho.
+        //quando eu chamar a função clicar, ela vai executar o código dentro dela.
+      }
+      function entrar() {
+        area.innerText = "Entrou!"; // Altera o texto do elemento selecionado para "Entrou!".
+        area.style.background = "green"; // Altera a cor de fundo do elemento selecionado para verde.
+      }
+      function sair() {
+        area.innerText = "Saiu!"; // Altera o texto do elemento selecionado para "Saiu!".
+        area.style.background = "#677ab9"; // Altera a cor de fundo do elemento selecionado para a cor original.
+      }
+    </script>
+  </body>
+</html>
