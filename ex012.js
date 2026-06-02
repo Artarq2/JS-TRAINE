@@ -10,3 +10,17 @@ if (6 <= hora && hora < 12) {
 } else {
   console.log("Boa madrugada!");
 }
+
+// Otimização de código, evitando aninhamento de estruturas condicionais
+let agora = new Date();
+let hora = agora.getHours();
+console.log(`Agora são exatamente ${hora} horas.`);
+
+function saudacao(hora) {
+  if (hora < 6) return "Boa madrugada!";
+  if (hora < 12) return "Bom dia!";
+  if (hora < 18) return "Boa tarde!";
+  return "Boa noite!";
+}
+
+console.log(saudacao(hora));

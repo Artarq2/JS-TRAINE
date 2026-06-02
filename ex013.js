@@ -9,7 +9,7 @@ let diaSem = agora.getDay();
 5 = Sexta-feira
 6 = Sábado
 */
-console.log(diaSem);
+// console.log(diaSem);
 switch (diaSem) {
   case 0:
     console.log("Hoje é Domingo!");
@@ -33,6 +33,6 @@ switch (diaSem) {
     console.log("Hoje é Sábado!");
     break;
   default:
-    console.log("Dia inválido!");
+    console.log("[ERRO] Dia inválido!");
     break;
 }

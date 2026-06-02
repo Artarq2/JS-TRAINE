@@ -9,3 +9,23 @@ if (idade >= 18 && idade <= 65) {
     console.log("Voce não tem idade para votar!");
   }
 }
+// early return -- Otimização de código, evitando aninhamento de estruturas condicionais
+
+let idade = 15;
+console.log(`Você tem ${idade} anos!`);
+
+function verificarVoto(idade) {
+  if (idade < 16) {
+    console.log("Você não tem idade para votar!");
+    return;
+  }
+
+  if ((idade >= 16 && idade < 18) || idade > 65) {
+    console.log("Você pode escolher votar ou não!");
+    return;
+  }
+
+  console.log("Você é obrigado a votar!");
+}
+
+verificarVoto(idade);
